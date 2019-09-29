@@ -49,3 +49,43 @@ def BuangAirBesar(hygiene,energy):
 	ret2 = energy - 5
 	Checker(ret,energy)
 	Checker(ret,hygiene)
+
+def medsos(fun, energy):
+	ret1 = fun + 10
+	ret2 = energy - 10
+	Checker(ret1,fun)
+	Checker(ret2,energy)
+
+def main_komputer(fun, energy):
+	ret1 = fun + 15
+	ret2 = energy - 10
+	Checker(ret1,fun)
+	Checker(ret2,energy)
+
+def mandi(hygiene, energy):
+	ret1 = hygiene + 15
+	ret2 = energy - 5
+	Checker(ret1,hygiene)
+	Checker(ret2,energy)
+
+def cuci_tangan(hygiene):
+	ret = hygiene + 5
+	Checker(ret,hygiene)
+
+def musik(fun, energy):
+	ret1 = fun + 10
+	ret2 = energy - 5
+	Checker(ret1,fun)
+	Checker(ret2,energy)
+
+def membaca_koran(fun, energy):
+	ret1 = fun + 5
+	ret2 = energy - 5
+	Checker(ret1,fun)
+	Checker(ret2,energy)
+
+def membaca_novel(fun, energy):
+	ret1 = fun + 10
+	ret2 = energy - 5
+	Checker(ret1,fun)
+	Checker(ret2,energy)
