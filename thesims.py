@@ -82,7 +82,7 @@ def BuangAirBesar(stat):
 def SosialisasiKafe(stat):
 	temp = Copy(stat)
 	temp.fun = stat.fun + 15
-	temp.hygiene = stat.hygiene + 5
+	temp.hygiene = stat.hygiene - 5
 	temp.energy = stat.energy - 10
 	Checker(temp,stat)
 
