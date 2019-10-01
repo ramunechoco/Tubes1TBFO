@@ -129,6 +129,16 @@ def MembacaNovel(stat):
 
 stats = Stat(10,0,0)
 
+print("####  ######  ######## ##    ##    ###    #### ") 
+print(" ##  ##    ## ##       ##   ##    ## ##    ##  ")
+print(" ##  ##       ##       ##  ##    ##   ##   ##  ")
+print(" ##   ######  ######   #####    ##     ##  ##  ")
+print(" ##        ## ##       ##  ##   #########  ##  ")
+print(" ##  ##    ## ##       ##   ##  ##     ##  ##  ")
+print("####  ######  ######## ##    ## ##     ## #### ")
+print("Anda, sebagai karakter utama, telah terlempar ke Dunia Nyata!")
+print("Apakah Anda akan meraih kemenangan yang gemilang, atau kematian yang mengenaskan?")
+
 while ((stats.hygiene > 0) or (stats.energy > 0) or (stats.fun > 0)) and ((stats.hygiene < 15) or (stats.energy < 15) or (stats.fun < 15)):
 	print("Apa yang ingin Anda lakukan kali ini?")
 	act = input()
@@ -168,13 +178,32 @@ while ((stats.hygiene > 0) or (stats.energy > 0) or (stats.fun > 0)) and ((stats
 		MembacaKoran(stats)
 	elif (act == "Membaca Novel"):
 		MembacaNovel(stats)
-	elif (act == "F"):
+	elif (act == "Keluar"):
 		break
 	else:
-		print("Aksi tidak diterima! Silakan coba lagi")
+		print("Apa yang ingin Anda lakukan, sih?")
+	print("")
 	print("Ingin keluar? Ketik 'Keluar'")
 else:
 	if (stats.hygiene == 15) and (stats.energy == 15) and (stats.fun == 15):
-		print('Congratulations!')
+		print("*****************Anda telah memenangkan Kehidupan!*****************")
+		print(" ######  ######## ##          ###    ##     ##    ###    ######## #### ")
+		print("##    ## ##       ##         ## ##   ###   ###   ## ##      ##    #### ")
+		print("##       ##       ##        ##   ##  #### ####  ##   ##     ##    #### ")
+		print(" ######  ######   ##       ##     ## ## ### ## ##     ##    ##     ##  ")
+		print("      ## ##       ##       ######### ##     ## #########    ##         ")
+		print("##    ## ##       ##       ##     ## ##     ## ##     ##    ##    #### ")
+		print(" ######  ######## ######## ##     ## ##     ## ##     ##    ##    #### ")	
 	elif (stats.hygiene == 0) and (stats.energy == 0) and (stats.fun == 0):
-		print('Press F for Respect')
+		print("")		
+		print("......................................")
+		print("......................................") 
+		print("...............########...............") 
+		print("...............##.....................")      
+		print("...............##.....................")       
+		print("...............######.................")   
+		print("...............##.....................")       
+		print("...............##.....................")       
+		print("...............##.....................")
+		print("......................................")
+		print("......Semoga berhasil lain waktu......") 
